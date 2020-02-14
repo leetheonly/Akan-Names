@@ -1,0 +1,15 @@
+body{
+    background-image: url(/home/lawrence/documents/Akan/images.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}.container{
+    max-width: fit-content;
+    max-height: fit-content;
+    
+    }
+h1{
+    color: red;
+    text-align: center;
+    
+}
