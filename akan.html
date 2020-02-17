@@ -12,13 +12,14 @@
 </head>
 <body>
     <div class="container">
+      <div class="row" col-md-6>
         <div class="jumbotron">
             <div id="introduction">
                 <h2>Akan Name </h2>
-                <p>This is a site made in order to find someones Akan name based on the Akan people of Accra</p>
+                <p>This is a site made in order to find someones Akan name based on the Akan people of Ghana</p>
             </div>
-            <h3>Fill the form below to get started</h3> <br>
-            <div class="row">
+            <div class="jumbotron">
+            <h3>Enter form below</h3> <br>
                     <form action="" id="myForm" class="form">
                         <fieldset>
                             <label>Date Of Birth</label><br>
@@ -35,8 +36,11 @@
                         <input type="radio" name="gender" id="femaleGender" value="female"> Female<br>
                         <button type="button" onclick="akanName()">Submit</button>
                         <button type="reset" name="refresh">Clear</button> 
-                 </form>  
+                 </form>
+                </div>
+                </div>
             </div>
+            <div class="row" col-md-5>
             <div class="jumbotron">
               <h2>How it works</h2>
               <p>The website uses the formula Day of the week (d) = ( ( (CC/4) -2*CC-1) + ((5*YY/4) ) + ((26*(MM+1)/10)) + DD ) mod 7
@@ -55,6 +59,7 @@
                <li> mod - is the modulus function ( % )</li> 
                 </ul> 
               </p>
+              </div>
             </div>           
     </div>
     <script src="akan.js"></script>
