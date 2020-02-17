@@ -1,4 +1,4 @@
-<!doctype html>
+m<!doctype html>
 <html lang="en">/
   <head>
     <!-- Required meta tags -->
@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <!-- Bootstrap CSS -->
     <link href="akan.css" rel="stylesheet" type="text/css">
+    <script src="akan.js"></script>
+    
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <title>Akan</title>
 </head>
@@ -28,9 +30,17 @@ So what this website does is it gives you your Akan name according to the day yo
       <legend>Text input</legend>
       <p>
         <label>date</label>
-        <input type = "text"
+        <input type = "datetime"
                id = "myBirthday"
-               value = "text here" />
+               value = "date of birth" />
+               <label>month</label>
+               <input type = "number"
+                      id = "month"
+                      value = "month" />
+                      <label>year</label>
+               <input type = "year"
+                      id = "year"
+                      value = "year" />
       </p>
       </div>
     </div>   
