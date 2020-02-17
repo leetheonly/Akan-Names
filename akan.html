@@ -1,51 +1,44 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <script src="akan.js"></script>
-    <link href="akan.css" rel="stylesheet" type="text/css">
-    <link href="bootstrap-4.4.1-dist/js/bootstrap.js" rel="stylesheet" media="all">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Akan Name Generator</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Patrick+Hand&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="akan.css">
 
-    
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <title>Akan</title>
 </head>
-  <body> 
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-  <title>Akan Names</title>
-  <div class="container">
-      <div class="jumbotron" style="background-color: aqua;">
-<h1>Akan Names</h1>
-<p>Akan names are derived from Ghanian culture.
- Frequently in Ghana, children are given their first name as a 'day name' which corresponds to the day in the week they were born.
-So what this website does is it gives you your Akan name according to the day you were born and if boy or a girl.</p>
-</div>
-<div class="row">
-  <div class="col-md-6">
-<div class="jumbotron" style="background-color:aqua;">
-  <h2>FILL IN FORM TO GET AKAN NAME</h2>
-  <p id="outcome">
-<input type="radio" name="gender" id="gender" value="male" checked> male
-<input type="radio" name="gender"  value="female" checked>female<br>
-  <label>date</label><br>
-    <input type = "number" id="day" placeholder="DD" class="form control" required max="31" min="1"><br>
-  <label>month</label><br>
-    <input type = "number" id = "month" placeholder="MM" class="form-control" required max="12" min="1" ><br>
-  <label>year</label><br>
-    <input type = "number"  id = "year" placeholder="YYYY" class="form-control" required min="0000" ><br>
-    <input type="button" value="submit"  onclick="output()"><br>
-
-    </p>
-      </div>
-      <div class="col-md-5"></div>
-      <div class="jumbotron text centre" style="background-color: aquamarine;">
-        <h2>HOW IT WORKS</h2>
-        <P>The system gives you your akan name by calculating the day you were born</P>
-      </div>
+<body>
+    <div class="container">
+        <div class="jumbotron">
+            <div id="introduction">
+                <h2>Akan Name </h2>
+                <p>This is a site made in order to find someones Akan name based on the Akan people of Accra</p>
+            </div>
+            <h3>Fill the form below to get started</h3> <br>
+            <div class="row">
+                    <form action="" id="myForm" class="form">
+                        <fieldset>
+                            <label>Date Of Birth</label><br>
+                            <input type="number" id="DD"  class="in" maxlength="2" placeholder="Date">
+                        <fieldset>
+                            <label>Month</label><br>
+                            <input type="number" id="MM" class="in" maxlength="2" placeholder="Month">
+                        </fieldset>
+                        <fieldset>
+                            <label>Year of birth</label><br>
+                            <input type="number" id="YY" class="in" maxlength="4" placeholder="Year" min="0000">
+                        </fieldset>
+                        <input type="radio" name="gender" id="maleGender" value="male"> Male<br>
+                        <input type="radio" name="gender" id="femaleGender" value="female"> Female<br>
+                        <button type="button" onclick="akanName()">Get me my Akan Name</button>
+                        <button type="reset" name="refresh">Clear</button> 
+                 </form>  
+            </div>
+        </div>            
     </div>
-    </div>   
+    <script src="akan.js"></script>
 </body>
 </html>
