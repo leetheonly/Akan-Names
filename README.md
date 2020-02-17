@@ -2,7 +2,7 @@
 
 ## Authors
 - [](https://github.com/leetheonly)
-
+Lawrence Ireri
 ## Project setup instructions
 To start using this project use the following commands:
 
