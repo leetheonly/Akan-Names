@@ -1,7 +1,7 @@
-function output() {
+function output()  {
     var day = document.getElementById("day").value ;
 var dd = parseInt(day);
-var day = [Sunday,Monday,Teusday,Wednesday,Thursday,Friday,Saturday]
+var day = ["Sunday","Monday","Teusday","Wednesday","Thursday","Friday","Saturday"]
 var month = document.getElementById("month").value;
 var mm = parseInt (month);
 var year = documents.getElementById("year").value
@@ -18,7 +18,7 @@ else {
 if (mm < 1 || mm > 12 ){
     alert("Invalid month");
 }
-else if (dd < 1|| dd > 31) {
+else if (dd < 1 || dd > 31) {
     alert("Invalid day")
     
 } else  if (Math.ceil(result) == 1 && gender === 'male'){
@@ -79,6 +79,9 @@ else  if (Math.ceil(result) == 3 && gender === 'male'){
             }
             else{
                 alert("enter information");
+            }
+            function getGender(){
+                var gender = document.getElementsByName("gender");
             }
         function submitResults() {
             window.location.submit();
