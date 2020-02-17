@@ -1,7 +1,6 @@
 function output()  {
-    var day = document.getElementById("day").value ;
+var day = document.getElementById("day").value ;
 var dd = parseInt(day);
-var day = ["Sunday","Monday","Teusday","Wednesday","Thursday","Friday","Saturday"]
 var month = document.getElementById("month").value;
 var mm = parseInt (month);
 var year = documents.getElementById("year").value
@@ -9,10 +8,11 @@ var yy = parseInt("year")
 var result = parseInt(((cc / 4) -2* cc-1) + ((5*yy / 4)) + ((26 * (mm+1) / 10 )) + dd) % 7
 var male = ["Kwasi","Kwadwo","Kwabena","Kwaku","Yaw","Kofi","Kwame"]
 var female = ["Akosua","Adwo","Abenaa","Akua","Yaa","Afua","Ama"]
+var day = ["Sunday","Monday","Teusday","Wednesday","Thursday","Friday","Saturday"]
 if (document.getElementById("gender").checked) {
     var gender = 'male';
 }
-else {
+else   {
     var gender = 'female';
 }
 if (mm < 1 || mm > 12 ){
@@ -22,7 +22,7 @@ else if (dd < 1 || dd > 31) {
     alert("Invalid day")
     
 } else  if (Math.ceil(result) == 1 && gender === 'male'){
-    document.getElementById("outcome").innerHTML  =
+    document.getElementById("outcome").innerHTML =
     ("born on Sunday , your Akan name is " + male[0])
 }
 else  if (Math.ceil(result) == 2 && gender === 'male'){
@@ -83,10 +83,9 @@ else  if (Math.ceil(result) == 3 && gender === 'male'){
             function getGender(){
                 var gender = document.getElementsByName("gender");
             }
-        function submitResults() {
-            window.location.submit();
-        }
-
+}
+function refreshPage() {
+    window.location.reload();
 }
 
 
