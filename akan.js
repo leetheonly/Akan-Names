@@ -79,26 +79,6 @@ else  if (Math.ceil(result) == 3 && gender === 'male'){
             }
             else{
                 alert("enter information");
+            
             }
-            function getGender(){
-                var gender = document.getElementsByName("gender");
-            }
-}
-function refreshPage() {
-    window.location.reload();
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+        }
